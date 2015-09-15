@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ComposerSettings">
+    <pharConfigPath>$USER_HOME$/PhpstormProjects/duedatebaby/composer.json</pharConfigPath>
+    <pharPath>$USER_HOME$/PhpstormProjects/duedatebaby/composer.phar</pharPath>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
+  <component name="PhpUnit" load_method="CUSTOM_LOADER" custom_loader_path="/Applications/MAMP/bin/php/php5.3.28/bin/pear" phpunit_phar_path="" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="MAMP PHP 5.5.10">
+    <include_path>
+      <path value="." />
+      <path value="/Applications/MAMP/bin/php/php5.5.10/lib/php" />
+    </include_path>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+</project>
