@@ -25,7 +25,7 @@
 
     <!-- Add your site or application content here -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-      <div class="container">
+      <div class="container" ng-app="kjaApp" ng-controller="Controller">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
@@ -38,16 +38,16 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
           <ul class="nav navbar-nav pull-right">
             <li>
-              <a href="#profile">Profile</a>
+              <a href ng-click="show()">Profile</a>
             </li>
             <li>
-              <a href="#bio">Bio</a>
+              <a href ng-click="show()">Bio</a>
             </li>
             <li>
-              <a href="#resume">Resume</a>
+              <a href ng-click="show()">Resume</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href ng-click="show()">Contact</a>
             </li>
 
           </ul>
@@ -66,7 +66,24 @@
        <div class="sand"></div>
    </div>
 
-
+    <!-- modal template -->
+    <script type="text/ng-template" id="modal.html">
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Yes or No?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>It's your call...</p>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -86,6 +103,7 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-modal-service/dst/angular-modal-service.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -100,6 +118,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/modals.js"></script>
         <!-- endbuild -->
 </body>
 </html>
