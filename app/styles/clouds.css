@@ -1,35 +1,34 @@
 .sky {
-    height:200px;
+    height:1100px;
     position:relative;
     overflow:hidden;
-    margin-top: 60px;
 }
 
 .clouds_one {
-    background:url("../images/clouds_left.png");
+    background:url("../images/clouds_left_big.png");
     position:absolute;
     left:0;
     top:0;
     height:100%;
     width:300%;
-    -webkit-animation:cloud_one 100s linear infinite;
-    -moz-animation:cloud_one 100s linear infinite;
-    -o-animation:cloud_one 100s linear infinite;
+    -webkit-animation:cloud_one 180s linear infinite;
+    -moz-animation:cloud_one 180s linear infinite;
+    -o-animation:cloud_one 180s linear infinite;
     -webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);
     -o-transform:translate3d(0,0,0)
 }
 
 .clouds_two {
-    background:url("../images/clouds_right.png");
+    background:url("../images/clouds_right_big.png");
     position:absolute;
     left:0;
     top:0;
     height:100%;
     width:300%;
-    -webkit-animation:cloud_two 155s linear infinite;
-    -moz-animation:cloud_two 155s linear infinite;
-    -o-animation:cloud_two 155s linear infinite;
+    -webkit-animation:cloud_two 200s linear infinite;
+    -moz-animation:cloud_two 200s linear infinite;
+    -o-animation:cloud_two 200s linear infinite;
     -webkit-transform:translate3d(0,0,0);
     -moz-transform:translate3d(0,0,0);
     -o-transform:translate3d(0,0,0)
@@ -175,4 +174,45 @@
     100% {
         left:-200%
     }
+}
+
+
+.water {
+    height:1200px;
+    position:relative;
+    overflow:hidden;
+    margin: 0;
+    padding: 0;
+
+}
+.water-behind {
+    background: url("../images/water_behind.png");
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:300%;
+    margin: 0;
+
+}
+.water-over {
+    background: url("../images/water_over.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    z-index: 1;
+}
+
+.sand {
+    background: url("../images/sand.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    right: 55%;
+    height: 100%;
+    width: 100%;
+    z-index: 1 !important;
+
 }

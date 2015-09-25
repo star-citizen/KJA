@@ -160,25 +160,13 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
-.clouds {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-
+  z-index: 1;
 }
 
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
+  background: url("../images/logo.png");
 }
 
 .intro .intro-body .brand-heading {
@@ -432,5 +420,3 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-
-

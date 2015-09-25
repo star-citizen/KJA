@@ -26,4 +26,9 @@ angular.module('kjaApp')
     $scope.removeTodo = function(index) {
       $scope.todos.splice(index, 1);
     };
-  });
+
+
+
+    });
+
+
